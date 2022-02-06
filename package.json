@@ -7,7 +7,7 @@
     "test": "mocha",
     "server": "nodemon -r dotenv/config ./dist/js/index.js",
     "compile": "tsc -w",
-    "start": "concurrently \"npm run compile\" \"npm run server\""
+    "start": "node -r dotenv/config ./dist/js/index.js"
   },
   "repository": {
     "type": "git",
