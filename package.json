@@ -8,9 +8,8 @@
     "compile": "tsc -w",
     "dev": "concurrently \"npm run compile\" \"npm run server\"",
     "test": "mocha",
-    "build": "tsc",
-    "postinstall": "npm run build",
-    "start": "node -r dotenv/config ./app/js/index.js"
+    "postinstall": "tsc",
+    "start": "node -r dotenv/config dist/index.js"
   },
   "repository": {
     "type": "git",
